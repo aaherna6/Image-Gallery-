@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(235, 235, 235);
+  font-family: "Grenze Gotisch", cursive;
+  color: rgb(255, 255, 255);
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  letter-spacing: 8px;
+}
+
+li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 450;
+  font-size: 2.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 20px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.7s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: rgb(194, 0, 194);
+}
+
+.nav_links li.active a {
+  border-bottom: 3px solid rgb(194, 0, 194);
+}
+
+.fa-camera-retro {
+  color: #000;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 5px;
+}
+
+.images {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.images:hover {
+  opacity: 0.8;
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.item8 {
+  grid-column: 3/5;
+  grid-row: 3/6;
+}
+
+.item13 {
+  grid-column: 3/5;
+}
+
+.item14 {
+  grid-row: 4/5;
+  grid-column: 1/3;
+}
+
+.item16 {
+  grid-row: 6/9;
+  grid-column: 1/3;
+}
+
+.item18 {
+  grid-column: 1/3;
+}
+
+.item19 {
+  grid-column: 3/5;
+}
+.item21 {
+  grid-row: 10/14;
+}
+
+.item22 {
+  grid-row: 10/14;
+}
+
+.footer {
+  background-color: rgb(255, 255, 255);
+}
+
+.container_footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 1rem;
+}
+
+.fab {
+  color: #000;
+}
+
+.iconbtn{ 
+    border: none;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.iconbtn:hover{
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .container_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 5px;
+  }
+  
+  .camera{
+      display: none;
+  }
+
+}
+
